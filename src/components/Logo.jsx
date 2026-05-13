@@ -1,6 +1,6 @@
-export default function Logo({ size = 12 }) {
+export default function Logo({ size = 6 }) {
   return (
-    <div className={`flex items-center gap-4 group`}>
+    <div className={`flex items-center gap-2 group`}>
       <div className={`w-${size} h-${size} relative flex-shrink-0`}>
         <svg className="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
           <path d="M24 8C24 8 18 2 12 2C6 2 2 6 2 12C2 18 10 26 24 40C38 26 46 18 46 12C46 6 42 2 36 2C30 2 24 8 24 8Z" fill="url(#logo-gradient)" />
@@ -15,8 +15,8 @@ export default function Logo({ size = 12 }) {
         </svg>
       </div>
       <div className="flex flex-col">
-        <span className="text-2xl font-bold tracking-tight uppercase leading-none mb-1" style={{ color: '#111847' }}>Abidemi</span>
-        <span className="text-xs font-semibold tracking-widest uppercase leading-none" style={{ color: '#111847', letterSpacing: '.15em' }}>Hope &amp; Empowerment</span>
+        <span className="text-base font-bold tracking-tight uppercase leading-none mb-0.5" style={{ color: '#111847' }}>Abidemi</span>
+        <span className="text-[0.6rem] font-semibold tracking-widest uppercase leading-none" style={{ color: '#111847', letterSpacing: '.15em' }}>Hope &amp; Empowerment</span>
       </div>
     </div>
   )

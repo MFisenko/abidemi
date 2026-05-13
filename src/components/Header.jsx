@@ -12,17 +12,17 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="py-8 px-6 lg:px-12 xl:px-24 border-b border-gray-100 sticky top-0 bg-white z-50">
+    <header className="py-4 px-6 lg:px-12 xl:px-24 border-b border-gray-100 sticky top-0 bg-white z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a className="flex items-center gap-4" href="#">
           <Logo />
         </a>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map(link => (
             <a
               key={link.label}
-              className="text-base font-medium text-gray-600 hover:text-[#111847] transition-colors tracking-wide"
+              className="text-sm font-medium text-gray-600 hover:text-[#111847] transition-colors tracking-wide"
               href={link.href}
             >
               {link.label}
@@ -32,7 +32,7 @@ export default function Header() {
 
         <div className="hidden md:block">
           <a
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white rounded-full hover:opacity-90 transition-all shadow-sm tracking-wide"
+            className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white rounded-full hover:opacity-90 transition-all shadow-sm tracking-wide"
             style={{ backgroundColor: '#111847' }}
             href="#donate"
           >
